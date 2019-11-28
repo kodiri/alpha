@@ -1,15 +1,10 @@
 import React, { Component } from 'react';
 import './App.css';
+import './toolbar.js'; 
 
-class App extends Component {
+class contact extends Component {
   render() {
     return (
-      <body>
-        <div>
-          <div>Login</div>
-          <div><img /></div>
-          <div>Burger Menu</div>
-        </div>
         <div><img /></div>
         <div>
             <h2>Created by...</h2>
@@ -27,9 +22,8 @@ class App extends Component {
             <h5>Login</h5>
             <h5>About</h5>
         </div>
-      </body>
     );
   }
+}
 
-
-export default App;
+export default contact;

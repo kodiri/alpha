@@ -1,15 +1,10 @@
 import React, { Component } from 'react';
 import './App.css';
+import './toolbar.js'; 
 
-class App extends Component {
+class login extends Component {
   render() {
     return (
-      <body>
-        <div>
-          <div>Login</div>
-          <div><img /></div>
-          <div>Burger Menu</div>
-        </div>
         <button>Login with Facebook</button>
         <div>or</div>
         <fieldset>
@@ -18,8 +13,7 @@ class App extends Component {
         </fieldset>
         <button>Login</button>
         <button>Create account</button>
-    </body>
-    )
-    }
+    );
+  }
 }
-export default App;
+export default login;

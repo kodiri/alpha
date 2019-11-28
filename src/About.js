@@ -1,15 +1,10 @@
 import React, { Component } from 'react';
 import './App.css';
+import './toolbar.js'; 
 
-class App extends Component {
+class About extends Component {
   render() {
     return (
-      <body>
-        <div>
-          <div>Login</div>
-          <div><img /></div>
-          <div>Burger Menu</div>
-        </div>
         <h1>About FestiPal</h1>
         <p>
             FestiPal is a tool for event organisers to create 
@@ -31,9 +26,9 @@ class App extends Component {
             quickly and without hassle. You can connect your 
             FestiPal site to your social media accounts...
         </p>
-      </body>
     );
   }
+}
 
 
-export default App;
+export default About;

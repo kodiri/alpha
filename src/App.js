@@ -1,15 +1,10 @@
 import React, { Component } from 'react';
 import './App.css';
+import './toolbar.js'; 
 
 class App extends Component {
   render() {
     return (
-      <body>
-        <div>
-          <div>Login</div>
-          <div><img alt='logo' /></div>
-          <div>Burger Menu</div>
-        </div>
         <div>
           <button>Sign up</button>
           <p>
@@ -21,7 +16,6 @@ class App extends Component {
             events to international parties
           </p>
         </div>
-      </body>
     );
   }
 }

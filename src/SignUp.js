@@ -1,15 +1,10 @@
 import React, { Component } from 'react';
 import './App.css';
+import './toolbar.js'; 
 
-class App extends Component {
+class Signup extends Component {
   render() {
     return (
-      <body>
-        <div>
-          <div>Login</div>
-          <div><img /></div>
-          <div>Burger Menu</div>
-        </div>
         <button>Sign up with Facebook</button>
         <div>or</div>
         <div>sign up with your email address</div>
@@ -21,8 +16,7 @@ class App extends Component {
             <input type = 'checkbox' value = 'I am not a robot' />
         </fieldset>
         <button>Sign Up</button>
-    </body>
-    )
+    );
     }
 }
-export default App; 
+export default Signup; 

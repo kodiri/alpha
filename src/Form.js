@@ -1,15 +1,10 @@
 import React, { Component } from 'react';
 import './App.css';
+import './toolbar.js'; 
 
-class App extends Component {
+class form extends Component {
   render() {
     return (
-      <body>
-        <div>
-          <div>Login</div>
-          <div><img /></div>
-          <div>Burger Menu</div>
-        </div>
        <form>
            <p>Event Description:</p>
            <textarea></textarea>
@@ -24,8 +19,7 @@ class App extends Component {
            <input type = 'text'/>
        </form>
        <button>Continue</button>
-    </body>
-    )
+    );
     }
 }
-export default App;
+export default form;

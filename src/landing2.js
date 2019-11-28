@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import './App.css';
+import './toolbar.js'; 
 
-class App extends Component {
+class landing extends Component {
   render() {
     return (
         <ul>
@@ -14,4 +15,4 @@ class App extends Component {
     )
     }
 }
-export default App;
+export default landing;
