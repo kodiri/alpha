@@ -6,8 +6,9 @@ class Dashboard extends React.Component {
 render() {
     return (
 <>
-
+This is the Dashboard component
 </>
     )
 }
 }
+export default Dashboard; 

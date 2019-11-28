@@ -6,8 +6,9 @@ class CreatedBy extends React.Component {
 render() {
     return (
 <>
-
+This is the CreatedBy component
 </>
     )
 }
 }
+export default CreatedBy; 

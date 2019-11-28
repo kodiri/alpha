@@ -6,8 +6,9 @@ class FormPageBasicInfo extends React.Component {
 render() {
     return (
 <>
-
+This is the FormPageBasicInfo component
 </>
     )
 }
 }
+export default FormPageBasicInfo; 

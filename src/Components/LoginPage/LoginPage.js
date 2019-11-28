@@ -6,8 +6,9 @@ class LoginPage extends React.Component {
 render() {
     return (
 <>
-
+This is the Login Page component
 </>
     )
 }
 }
+export default LoginPage; 

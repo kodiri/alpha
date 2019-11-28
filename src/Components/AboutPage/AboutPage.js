@@ -7,8 +7,10 @@ class AboutPage extends React.Component {
 render() {
     return (
 <>
+This is the About Page Component
 <CreatedBy />
 </>
     )
 }
 }
+export default AboutPage; 
