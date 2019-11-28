@@ -1,21 +1,25 @@
 import React, { Component } from 'react';
 import './App.css';
-import './toolbar.js'; 
+import LandingPage from './LandingPage/LandingPage.js'; 
+import AboutPage from './AboutPage/AboutPage.js'; 
+import ContactPage from './ContactPage/ContactPage.js';
+import Dashboard from './Dashboard/Dashboard.js';
+
+
+
+import Navbar from './Navbar/Navbar.js';
 
 class App extends Component {
   render() {
     return (
-        <div>
-          <button>Sign up</button>
-          <p>
-            Festipal is the essential digital tool for
-            creating bespoke, user-friendly web apps.
-          </p>
-          <p>
-            Designed for festival organisers, from indie 
-            events to international parties
-          </p>
-        </div>
+      <>
+       <Navbar />
+      <LandingPage />
+      <AboutPage />
+      <ContactPage />
+      <Dashboard />
+     
+        </>
     );
   }
 }

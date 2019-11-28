@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import './toolbar.js'; 
 
-class dashboard extends Component {
+class Dashboard extends Component {
   render() {
     return (
         <h1>Welcome to Hogsozzle's dashboard</h1>
@@ -15,4 +15,4 @@ class dashboard extends Component {
     );
     }
 }
-export default dashboard;
+export default Dashboard;
