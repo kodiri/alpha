@@ -7,7 +7,7 @@ class App extends Component {
       <body>
         <div>
           <div>Login</div>
-          <div><img /></div>
+          <div><img alt='logo' /></div>
           <div>Burger Menu</div>
         </div>
         <div>
@@ -24,6 +24,6 @@ class App extends Component {
       </body>
     );
   }
-
+}
 
 export default App;
