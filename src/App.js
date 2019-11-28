@@ -1,26 +1,29 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { Component } from 'react';
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+class App extends Component {
+  render() {
+    return (
+      <body>
+        <div>
+          <div>Login</div>
+          <div><img /></div>
+          <div>Burger Menu</div>
+        </div>
+        <div>
+          <button>Sign up</button>
+          <p>
+            Festipal is the essential digital tool for
+            creating bespoke, user-friendly web apps.
+          </p>
+          <p>
+            Designed for festival organisers, from indie 
+            events to international parties
+          </p>
+        </div>
+      </body>
+    );
+  }
+
 
 export default App;
