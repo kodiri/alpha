@@ -8,7 +8,6 @@ class LandingPage extends React.Component {
 render() {
     return (
 <>
-This is the Landing Page Component
     <LoginPage />
     <SignUpPage />
 </>
