@@ -10,7 +10,7 @@ class SignUpPage extends React.Component {
         <button className="fb">Sign Up With Facebook</button>
         <p id="or"><span>or</span></p>
         <p>sign up with your email address</p>
-        <form className ="main">
+        <form>
             <input type="text" placeholder="*Festival name" required></input>
             <input type="text" placeholder="*Email" required></input>
             <input type="text" placeholder="*Password" required></input>
