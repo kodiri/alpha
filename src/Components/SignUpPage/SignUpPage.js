@@ -20,10 +20,9 @@ class SignUpPage extends React.Component {
         </form>
         <div className="container">
         <button className="item">Sign Up</button>
-        </div>
-                <FormPageBasicInfo />
+          </div>
             </>
-        )
+        );
     }
 }
 export default SignUpPage; 

@@ -1,5 +1,6 @@
 import React from 'react';
 import './LoginPage.css';
+import GoogleLoginButton from '../../Zara_Google_Login/GoogleLoginButton';
 
 class LoginPage extends React.Component {
 
@@ -7,6 +8,7 @@ render() {
     return (
 <>
 <button className="fb">Login With Facebook</button>
+      <GoogleLoginButton />
 <p id="or"><span>or</span></p>
         <form>
             <input type="text" placeholder="email"></input>
@@ -18,6 +20,6 @@ render() {
         </div>
 </>
     )
-}
+  }
 }
 export default LoginPage; 
