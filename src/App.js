@@ -5,7 +5,7 @@ import Login from './Forms/loginForm.js';
 import SignUp from './Forms/signupForm.js';
 import EventDescription from './Forms/EventDescription.js';
 import ContactDetails from './Forms/contactDetails.js';
-import SimpleMap from './map.js';
+// import SimpleMap from './map.js';
 import LandingPage from './Components/LandingPage/LandingPage.js';
 import AboutPage from './Components/AboutPage/AboutPage.js';
 import ContactPage from './Components/ContactPage/ContactPage.js';
@@ -24,17 +24,28 @@ class App extends Component {
               <LandingPage />
             </Route>
             <Route exact path='/about'>
+              <Navbar />
               <AboutPage />
               <ContactPage />
             </Route>
-            <Route exact path='/:dashboard'>
+            <Route exact path='/dashboard/:userId'>
+              <Navbar />
               <Dashboard />
             </Route>
-            <Login />
-            <SignUp />
-            <EventDescription />
-            <ContactDetails />
-            <SimpleMap />
+            <Route exact path='/login'>
+              <Navbar />
+              <Login />
+            </Route>
+            <Route exact path='/signup'>
+              <Navbar />
+              <SignUp />
+            </Route>
+            <Route exact path='/loggedInTrue'>
+              <Navbar />
+              <EventDescription />
+              <ContactDetails />
+            </Route>
+            {/* <SimpleMap /> */}
           </Switch>
           <Hogsozzle />
 
