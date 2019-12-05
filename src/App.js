@@ -11,6 +11,7 @@ import AboutPage from './Components/AboutPage/AboutPage.js';
 import ContactPage from './Components/ContactPage/ContactPage.js';
 import Dashboard from './Components/Dashboard/Dashboard.js';
 import Navbar from './Components/Navbar/Navbar';
+import Hogsozzle from './mumtahin2/Mumtahin2.js';
 
 class App extends Component {
   render() {
@@ -35,6 +36,8 @@ class App extends Component {
             <ContactDetails />
             <SimpleMap />
           </Switch>
+          <Hogsozzle />
+
         </div>
       </Router>
     );
