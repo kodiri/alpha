@@ -1,17 +1,20 @@
 import React, { Component } from 'react';
 import './App.css';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import Login from './Components/Forms/loginForm.js';
-import SignUp from './Components/Forms/signupForm.js';
-import EventDescription from './Components/Forms/EventDescription.js';
-import ContactDetails from './Components/Forms/contactDetails.js';
-// import LandingPage from './Components/LandingPage/LandingPage.js';
+
+import LoginForm from './Components/Forms/LoginForm/loginForm';
+import SignUpForm from './Components/Forms/SignUpForm/signupForm.js';
+import BasicInfo from './Components/Forms/BasicInfo/basicInfo';
+import ConnectWithUs from './Components/Forms/ConnectWithUs/ConnectWithUs';
+import LandingPage from './Components/LandingPage/LandingPage.js';
 import AboutPage from './Components/AboutPage/AboutPage.js';
-import ContactPage from './Components/ContactPage/ContactPage.js';
 import Dashboard from './Components/Dashboard/Dashboard.js';
 import Navbar from './Components/Navbar/Navbar';
 import PreviewSite from './PreviewSite/PreviewSite';
+
+import DbData from './Components/DbData/DbData';
 import FaqForm from './Components/Forms/FaqForm/FaqForm';
+import TicketInfo from './Components/Forms/TicketInfo/TicketInfo'; 
 
 
 class App extends Component {
@@ -20,35 +23,57 @@ class App extends Component {
       <Router>
         <div className='App'>
           <Switch>
+            {/* Landing Page */}
             <Route exact path='/'>
               {/* <Navbar /> */}
               <FaqForm/>
               {/* <LandingPage /> */}
             </Route>
+            {/* About page */}
             <Route exact path='/about'>
               <Navbar />
               <AboutPage />
-              <ContactPage />
             </Route>
+            {/* user dashboard */}
             <Route exact path='/dashboard/:userId'>
               <Navbar />
               <Dashboard />
             </Route>
+            {/* login page/form */}
             <Route exact path='/login'>
-              <Login />
+              <Navbar />
+              <LoginForm />
             </Route>
+            {/* signup page/form */}
             <Route exact path='/signup'>
-              <SignUp />
+              <Navbar />
+              <SignUpForm />
             </Route>
-            <Route exact path='/loggedInTrue'>
-              <EventDescription />
+            {/* event details form */}
+            <Route exact path='/basicInfo'>
+              <BasicInfo />
             </Route>
-            <Route exact path='/contactdetails'>
-              <ContactDetails />
+            {/* event contact form */}
+            <Route exact path='/contactForm'>
+              <ConnectWithUs />
             </Route>
-            <Route exact path='/PreviewSite'><PreviewSite /></Route>
+            {/* FAQ form */}
+            <Route exact path='/faqForm'>
+              <FaqForm />
+            </Route>
+            {/* Ticket Info form */}
+            <Route exact path='/ticketInfoForm'>
+              <TicketInfo />
+            </Route>
+            {/* Preview Site */}
+            <Route exact path='/PreviewSite'>
+              <PreviewSite />
+            </Route>
+            {/* test route to retrieve database */}
+            <Route exact path='/db'>
+              <DbData />
+            </Route>
           </Switch>
-
         </div>
       </Router>
     );
