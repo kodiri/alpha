@@ -27,7 +27,7 @@ class App extends Component {
             <Route exact path='/'>
               {/* <Navbar /> */}
               <FaqForm/>
-              {/* <LandingPage /> */}
+              {<LandingPage />}
             </Route>
             {/* About page */}
             <Route exact path='/about'>
