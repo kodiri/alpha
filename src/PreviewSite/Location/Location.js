@@ -22,10 +22,7 @@ export default class Location extends React.Component {
                 {/* <img src={gettingthere} alt='gettingthere logo' /> */}
                 <p>For international festival goers, the best way to get to Hogsozzzle is to fly to Sofia airport,which is one hour away from where the festival takes place.  </p>
                 <button>View more</button>
-                <h1>FAQ</h1>
-                <img src={faq} alt='faq logo' />
-                <p>What is Hogsozzle, where does it take place and when is it? Can I perform at the festival or operate a stall? Can I bring my own alcohol?What will the weather be like? What are accomodation options if I’m not camping? You can find the answers to all these questions and more in this section.</p>
-            </div>
+                </div>
         );
     }
 }
