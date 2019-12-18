@@ -16,7 +16,6 @@ import FaqForm from './Components/Forms/FaqForm/FaqForm';
 import TicketInfo from './Components/Forms/TicketInfo/TicketInfo';
 import LocationForm from './Components/Forms/Location/Location';
 
-
 class App extends Component {
   render() {
     return (
@@ -25,9 +24,8 @@ class App extends Component {
           <Switch>
             {/* Landing Page */}
             <Route exact path='/'>
-              {/* <Navbar /> */}
-              <FaqForm/>
-              {<LandingPage />}
+              <Navbar />
+              <LandingPage />
             </Route>
             {/* About page */}
             <Route exact path='/about'>
