@@ -33,6 +33,7 @@ export default class FaqBackend extends React.Component {
 
     render() {
         return (
+
             <div className='FaqsFormPage'>
 
                 <h1>FAQs</h1>
@@ -82,12 +83,12 @@ export default class FaqBackend extends React.Component {
                         </div>
                     </div>
                     <div className="containerFaq">
-                <button className="item">Save</button>
-                <button className="item">Preview</button>
-                <button className="item">Next</button>
-            </div>
+                        <button className="item">Save</button>
+                        <button className="item">Preview</button>
+                        <button className="item">Next</button>
+                    </div>
                 </form>
-              
+
             </div>
         );
 

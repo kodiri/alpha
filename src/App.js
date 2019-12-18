@@ -13,7 +13,8 @@ import PreviewSite from './PreviewSite/PreviewSite';
 
 import DbData from './Components/DbData/DbData';
 import FaqForm from './Components/Forms/FaqForm/FaqForm';
-import TicketInfo from './Components/Forms/TicketInfo/TicketInfo'; 
+import TicketInfo from './Components/Forms/TicketInfo/TicketInfo';
+import LocationForm from './Components/Forms/Location/Location';
 
 
 class App extends Component {
@@ -52,6 +53,10 @@ class App extends Component {
             <Route exact path='/basicInfo'>
               <BasicInfo />
             </Route>
+            {/* Location form */}
+            <Route exact path='/location'>
+              <LocationForm />
+            </Route>
             {/* event contact form */}
             <Route exact path='/contactForm'>
               <ConnectWithUs />
@@ -74,7 +79,7 @@ class App extends Component {
             </Route>
           </Switch>
         </div>
-      </Router>
+      </Router >
     );
   }
 }
