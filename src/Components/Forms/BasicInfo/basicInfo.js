@@ -11,7 +11,6 @@ export default function EventDescription() {
 
     function handleEventName(e) {
         localStorage.setItem("Event Name", e.target.value);
-
     }
     function handleStartDate(e) {
         localStorage.setItem("Start Date", e.target.value)
