@@ -10,14 +10,13 @@ export default function LoginForm() {
             <p id="or"><span>or</span></p>
             <p>Log in with your email address</p>
             <form>
-                <input type="text" placeholder="email"></input>
-                <input type="password" placeholder="password"></input>
+                <input className='email-input' type="text" placeholder="email"></input>
+                <input className='email-input' type="password" placeholder="password"></input>
             </form>
-
             <div className="container">
                 <a href='/dashboard/testUser'><button className="item">Login</button></a>
                 <em>Don't have an account yet?</em>
-                <a href="/signup"><button className="item">Create New Account</button></a>
+                <a href="/signup"><button id="item-anchor" className="item">Create New Account</button></a>
             </div>
         </main>
     )
