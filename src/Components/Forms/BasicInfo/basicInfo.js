@@ -1,5 +1,5 @@
 import React from 'react';
-import {useParams} from 'react-router-dom';
+// import {useParams} from 'react-router-dom';
 import './basicInfo.css';
 // import axios from 'axios';
 
@@ -60,7 +60,7 @@ export default function EventDescription() {
         <textarea className="eventDescriptiontextarea" placeholder="Hogsozzle is a perfoming arts and music festival known for its hog rost" onChange={handleBlurb}></textarea><br/>
         <div className="containerBasicInfo">
                 <a href='/dashboard/123' className="item">Save and return to dashboard</a><br/><br/>
-                <a href='/PreviewSite' className="item">Save and continue</a><br/>
+                <a href='/ticketInfoForm' className="item">Save and continue</a><br/>
         </div>
         <br/>
         </form>
