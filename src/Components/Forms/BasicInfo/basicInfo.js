@@ -57,7 +57,7 @@ export default function EventDescription() {
         <label>Start Date:</label><input className="startDate" type="date" onChange={handleStartDate}/>
         <label>End Date:</label><input className="startDate" type="date" onChange={handleEndDate}/>
         <label>Location: </label><input className="startDate" type="string" placeholder="Sofia, Bulgaria" onChange={handleLocation}/>
-        <label>Enter a short blurb about your festival: </label>
+        <label>Enter your festival description: </label>
         <textarea className="eventDescriptiontextarea" placeholder="Hogsozzle is a perfoming arts and music festival known for its hog rost" onChange={handleBlurb}></textarea><br/>
         <div className="containerBasicInfo">
                 <a href='/dashboard/123' className="item">Save and return to dashboard</a><br/><br/>
