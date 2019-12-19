@@ -20,10 +20,8 @@ export default function SignUp() {
         localStorage.setItem('userPassword', e.target.value)
     }
 
-
     return (
         <>
-
             <main id='signUpPageContent'>
                 {festivalName}
                 <br />
@@ -32,7 +30,7 @@ export default function SignUp() {
                 <p>sign up with your email address:</p>
 
                 <form id='loginForm'>
-                    <input type="text" placeholder="Festival name" required onChange={userNameChange} />
+                    <input type="text" placeholder="User name" required onChange={userNameChange} />
                     <input type="text" placeholder="Festival name" required onChange={handleNameChange} />
                     <input type="text" placeholder="Email" required onChange={userEmailChange} />
                     <input type="password" placeholder="Password" required onChange={userPassword} />
