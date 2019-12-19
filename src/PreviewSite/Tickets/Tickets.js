@@ -14,7 +14,7 @@ render() {
             <p> Super early bird passes on sale now.<br />
                 Get your ticket to Bulgaria’s hottest<br />
                 summer party.</p>
-            <button className='button'>Buy Tickets</button>
+            <button className='btn'>Buy Tickets</button>
         </div>
     );
 }

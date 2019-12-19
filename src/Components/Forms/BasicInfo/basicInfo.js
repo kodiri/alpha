@@ -8,7 +8,7 @@ export default function EventDescription() {
         setSubmit('Splendid, thank you!')
     }
     return( 
-        <>
+        <div className='tell-us-more'>
         <h1>Tell us some more about your event!</h1>
         <form id="eventDescriptionForm">
         <label>Festival name</label>
@@ -27,8 +27,6 @@ export default function EventDescription() {
             {submit}
         </form>
         {/* <a href="/contactdetails"><button className="item" onClick={handleSubmit}>Continue</button></a><br></br> */}
-        
-        
-        </>
+        </div>
     )
 }
