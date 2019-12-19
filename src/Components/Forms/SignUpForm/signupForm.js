@@ -10,6 +10,9 @@ export default function SignUp() {
         localStorage.setItem("Event Name", e.target.value)
     }
 
+    function userNameChange(e) {
+        localStorage.setItem('userName', e.target.value)
+    }
     function userEmailChange(e) {
         localStorage.setItem('userEmail', e.target.value)
     }
@@ -26,9 +29,10 @@ export default function SignUp() {
                 <br />
                 <GoogleLoginButton text="Sign Up with Google" />
                 <p id="or"><span>or</span></p>
-                <p>sign up with your email address</p>
+                <p>sign up with your email address:</p>
 
                 <form id='loginForm'>
+                    <input type="text" placeholder="Festival name" required onChange={userNameChange} />
                     <input type="text" placeholder="Festival name" required onChange={handleNameChange} />
                     <input type="text" placeholder="Email" required onChange={userEmailChange} />
                     <input type="password" placeholder="Password" required onChange={userPassword} />
