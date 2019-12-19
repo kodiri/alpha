@@ -4,6 +4,7 @@ import React from 'react';
 export default function Location() {
     return (
         <>
+         <h1>Step 3: Location</h1>
             <label>Add postcode to display location map: </label>
             {/* api here  */}
             <label>Add details about getting to your venue: </label>
