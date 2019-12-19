@@ -9,8 +9,8 @@ export default function TicketInfo() {
   function handleTicketDescription(e) {
     localStorage.setItem("Ticket Description", e.target.value)
   }
-  function handleLink(e) {
-    localStorage.setItem("Ticket Provider", e.target.value)
+  function ticketLink(e) {
+    localStorage.setItem("Ticket Link", e.target.value)
   }
 
   return (
@@ -21,8 +21,10 @@ export default function TicketInfo() {
         <p>Add a ticket description</p>
         <textarea className="infoTextArea" type='text' placeholder='Ticket description' onChange={handleTicketDescription}></textarea>
         <p>Enter a link to your ticket provider</p>
-        <textarea className="infoTextArea" type='text' placeholder='Link of your ticket' onChange={handleLink}></textarea>
-        <p>Select your display image:</p>
+
+        <textarea className="infoTextArea" type='text' placeholder='Link of your ticket' onChange={ticketLink}></textarea>
+
+        {/* <p>Select your display image:</p>
         <div className='slide-photo'>
           <div className='img-item'>
             <img src={festival} alt='go' />
@@ -36,7 +38,7 @@ export default function TicketInfo() {
             <img src={music} alt='go' />
             <input className='box' type="radio" name='music' value="music" />
           </div>
-        </div>
+        </div> */}
         <div className="containerTicketInfo">
           <a href='/dashboard/123' className="item">Save and return to dashboard</a>
           <a href='/location' className="item">Save and continue</a>

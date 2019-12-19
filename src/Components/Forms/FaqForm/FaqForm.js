@@ -46,7 +46,7 @@ export default class FaqBackend extends React.Component {
             <div className='FaqsFormPage'>
 
                 <h1>Step 4: FAQs</h1>
-                <form>
+                <form className='faq-form'>
                     <h2>Please add your frequently asked questions for attendees</h2>
                     <p className='FaqFieldType'>Question:</p>
                     <input type='text' id='faqinput' onChange={this.handleFaq1}></input>
@@ -58,8 +58,8 @@ export default class FaqBackend extends React.Component {
                     <input type='text' id='faqinput' onChange={this.handleFaq2}></input>
 
                     <p className='FaqFieldType'>Answer:</p>
-                    <textarea type='text' id='faqtextarea' onChange={this.handleFaq2Answer}></textarea>
 
+                    <textarea type='text' id='faqtextarea' onChange={this.handleFaq2Answer} />
                     <div className="containerFaq">
                         <a href='/dashboard/123' className="item">Save and return to dashboard</a>
                         <a href='/contactForm' className="item">Save and continue</a>
