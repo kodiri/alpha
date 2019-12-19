@@ -24,9 +24,10 @@ export default function ContactPage() {
                 <textarea className='infoTextArea' type="email" id='connect' onChange={emailChange}></textarea>
                 <p>Add company address</p>
                 <textarea className='infoTextArea' type="text" id='connect' onChange={addressChange}></textarea>
-                <div className="containerEndButtons">
-                    <a href='/dashboard/123' className="item">Save and return to dashboard</a>
-                    <a href='/PreviewSite' target="_blank" rel="noopener noreferrer" className="item">Publish my site</a>
+
+                <div className="buttonBoxForms">
+                    <a href='/dashboard/123' className="buttonBoxFormButton">Save and return to dashboard</a>
+                    <a href='/PreviewSite' target="_blank" rel="noopener noreferrer" className="buttonBoxFormButton">Publish my site</a>
                 </div>
             </form>
         </>
