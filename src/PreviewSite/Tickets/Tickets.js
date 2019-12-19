@@ -8,8 +8,9 @@ export default class Tickets extends React.Component {
     constructor(props) {
         super(props)
         this.state = {
-            ticketDes: 'Super early bird passes on sale now. Get your ticket to Bulgaria’s hottest summer party.',
-            ticketLink: '/',
+            ticketDes: localStorage.getItem("Ticket Description"),
+            ticketLink: "https://" + localStorage.getItem("Ticket Provider"),
+            ticketProvider: localStorage.getItem("Ticket Provider"),
             imgSrc1: festival,
             imgSrc2: concert,
             imgSrc3: music
@@ -20,10 +21,13 @@ export default class Tickets extends React.Component {
         return (
             <div className='buy-tickets'>
                 <p>{this.state.ticketDes}</p>
+                <p>Ticket provider: {this.state.ticketProvider}</p>
                 <button className='btn'>
                     <a href={this.state.ticketLink}>Buy Tickets</a>
                 </button>
                 <img src={this.state.imgSrc1} alt='your' />
+                
+
             </div>
         );
     }
