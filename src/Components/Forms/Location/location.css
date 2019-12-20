@@ -1,0 +1,38 @@
+.post-code {
+    background-color: rgb(218, 218, 218);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+.inner-loc {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    width: 50%;
+    border: 5px solid rgb(43, 81, 209);
+    border-radius: 10px;
+    background-color: rgb(194, 194, 194);
+}
+label {
+    font-size: large;
+    font-weight: 700;
+}
+.loc {
+    width: 70%;
+    height: 5%;
+    margin: 2%;
+    background-color: rgb(236, 236, 236);
+}
+
+@media only screen and (max-width: 600px) {
+    .inner-loc {
+        height: 90vh;
+        width: 90%;
+    }
+  }

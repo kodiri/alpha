@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './location.css';
 
 export default function Location() {
     let [postcode, setPostcode] = useState("");
@@ -12,13 +13,14 @@ export default function Location() {
 
 
     return (
-        <>
-            <label>Add postcode of your event: </label><input type="text" onChange={handlePostcodeChange}/>
-            <label>Add details about getting to your venue: </label><input type="text" onChange={accessDetails}/>
-            <textarea placeholder="Eg. nearest aiports, train stations, taxis, parking, shuttle buses etc"></textarea>
-      />
-
-
-        </>
+        <div className='post-code'>
+            <div className='inner-loc'>
+                <label>Add postcode of your event: </label>
+                <input className='loc' type="text" onChange={handlePostcodeChange} />
+                <label>Add details about getting to your venue: </label>
+                <input className='loc' type="text" onChange={accessDetails} />
+                <textarea className='loc' placeholder="Eg. nearest aiports, train stations, taxis, parking, shuttle buses etc"></textarea>
+            </div>
+        </div>
     )
 }
