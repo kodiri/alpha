@@ -12,7 +12,7 @@ let dashboardItems = [
     {
         id: 'info',
         link: '/basicInfo',
-        title: 'Basic Info',
+        title: 'Info',
         icon: info,
     },
     {
@@ -44,18 +44,18 @@ let dashboardItems = [
 export default function Dashboard() {
     const { userId } = useParams();
 
-React.useEffect((userId) => {
-    if (userId !== '123') {
-        axios.get('/userData')
-        .then(function (response) {
-            console.log(response);
-        })
-        .catch(function (error) {
-            console.log(error);
-        })
-    }
-  
-}, [userId])
+    React.useEffect((userId) => {
+        if (userId !== '123') {
+            axios.get('/userData')
+                .then(function (response) {
+                    console.log(response);
+                })
+                .catch(function (error) {
+                    console.log(error);
+                })
+        }
+
+    }, [userId])
 
     let dashboardComponents = () => {
         return dashboardItems.map(({ id, link, title, icon }) => {
@@ -80,10 +80,9 @@ React.useEffect((userId) => {
                 <div className='buttonContainer'>
                     {dashboardComponents()}
                 </div>
-                <a href='/PreviewSite' className='aDashboard' target="_blank" rel="noopener noreferrer">
-                    <button className='previewDash'>Preview my site
-                            </button>
-                </a>
+
+                <button className='previewDash'><a href='/PreviewSite' id='previewSiteButton' target="_blank" rel="noopener noreferrer">Preview my site</a></button>
+
             </div>
         </>
     );

@@ -27,33 +27,23 @@ h1 {
   font-family: 'Englebert', sans-serif;
 }
 
-.buttonBoxForms {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+.formPageDashboard {
+  padding: 5vh 10vw;
+  text-align: left;
+  background: #F6F6F6;
+  border-radius: 5px;
+  border: #474d69 1px solid;
+}
+
+.formPageMargin {
   margin: 1%;
 }
 
-.buttonBoxFormButton {
-  color: rgb(231, 231, 231);
-  font-family: Englebert;
+.buttonBoxFormButton:hover {
+  color: antiquewhite;
   text-decoration: none;
-  font-weight: 700;
-  font-size: 1.2em;
-  background: #e6331c;
-  /* #474d69 */
-  border-radius: 5px;
-  margin: 3%;
-  flex: 1;
-  padding: 3%;
-  width: 90%;
-  /* border: 2px outset grey; */
-  /* width: 80%; */
 }
 
-@media only screen and (max-width: 600px) {
-  .buttonBoxForms {
-    flex-direction: column;
-  }
+.formTitle {
+  color: #474d69;
 }
